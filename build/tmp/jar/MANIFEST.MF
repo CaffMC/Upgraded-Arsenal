@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: upgradedarsenal
+Specification-Vendor: Mason Hite
+Specification-Version: 1
+Implementation-Title: Upgraded-Arsenal
+Implementation-Version: 1.0
+Implementation-Vendor: Mason Hite
+
