@@ -82,9 +82,9 @@ public class WitherStaffItem extends Item {
         // Damage weapon
         stack.hurtAndBreak(1, attacker, null);
 
-        // --- Add cooldown (30 seconds) ---
+        // --- Add cooldown (12.5 seconds) ---
         if (attacker instanceof Player player) {
-            player.getCooldowns().addCooldown(this, 100);
+            player.getCooldowns().addCooldown(this, 250);
         }
 
         return true;
