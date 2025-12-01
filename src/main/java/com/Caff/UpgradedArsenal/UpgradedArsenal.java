@@ -29,6 +29,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import com.Caff.UpgradedArsenal.ModSounds;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(UpgradedArsenal.MOD_ID)
@@ -46,6 +48,8 @@ public class UpgradedArsenal {
         MinecraftForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -1,0 +1,10 @@
+{
+    "witherstaff_whisperstab": {
+        "sounds": [
+            {
+                "name": "upgradedarsenal:witherstaff_sound",
+                "stream": false
+            }
+        ]
+    }
+}
