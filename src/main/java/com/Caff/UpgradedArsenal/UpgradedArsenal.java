@@ -1,5 +1,6 @@
 package com.Caff.UpgradedArsenal;
 
+import com.Caff.UpgradedArsenal.item.Moditems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -44,6 +45,8 @@ public class UpgradedArsenal {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        Moditems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -58,6 +61,9 @@ public class UpgradedArsenal {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(Moditems.WITHERSTAFF);
+        }
 
     }
 
