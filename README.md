@@ -16,3 +16,6 @@ Current Weapons:
     -Fully custom texture made for this project
 
 The mod .jar file can be found in build/libs/
+
+A short project presentation can be watched here:
+https://www.youtube.com/watch?v=qXazc50rk0s

@@ -5,3 +5,6 @@
 /gamemode survival
 /gamemode creative
 /time set day
+/gamemode creative
+/give @p upgradedarsenal:witherstaff
+/summon minecraft:iron_golem
